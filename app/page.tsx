@@ -160,17 +160,41 @@ export default function HomePage() {
 
     <div style={{textAlign: 'center', marginTop: 40}}>
     <Title w="full" order={3} size="h1">
-        Conheça um pouco mais sobre nós
+        Quem somos nós?
     </Title>
     </div>
 
-    <AspectRatio ratio={10 / 6} m="150" visibleFrom='sm'>
+    <div style={{textAlign: 'center', marginTop: 40}}>
+      <Text w="80%" size="lg" ml="10%">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        efficitur, quam in facilisis commodo, sapien justo cursus urna, ut
+        blandit turpis nulla vel quam. Nunc nec neque at dolor venenatis
+        convallis. In hac habitasse platea dictumst. Aenean vel dui ut ex
+        fringilla lobortis. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis
+        in faucibus orci luctus et ultrices posuere cubilia curae; Sed at
+      </Text>
+    </div>
+
+    <div style={{textAlign: 'center', marginTop: 40}}>
+    <Title w="full" order={3} size="h2">
+        Conheça um pouco mais através do vídeo institucional
+    </Title>
+    </div>
+
+    <AspectRatio ratio={10 / 6} mt="50" visibleFrom='sm' ml={200} mr={200} mb="50">
       <iframe src="https://www.youtube.com/embed/Lli99OmkPwM?si=mBOhSPaDqicNS6eq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen/>
     </AspectRatio>
 
     <AspectRatio ratio={10 / 6} hiddenFrom='sm'>
       <iframe src="https://www.youtube.com/embed/Lli99OmkPwM?si=mBOhSPaDqicNS6eq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen/>
     </AspectRatio>
+
+    <div style={{textAlign: 'center', marginTop: 40, marginBottom: 40}}>
+    <Title w="full" order={3} size="h2">
+        Últimas notícias!
+    </Title>
+    </div>
 
     <Carousel
       slideSize={{ base: '100%', sm: '50%' }}
@@ -186,7 +210,7 @@ export default function HomePage() {
 
     <div className={footerUI.footer}>
       <Container className={footerUI.inner}>
-        <div/>
+        <div className={logo.logo}>Logo</div>
         <Group gap={0} className={footerUI.links} justify="flex-end" wrap="nowrap">
           <ActionIcon size="lg" color="blue" >
             <IconBrandTwitter size={18} stroke={1.5} />

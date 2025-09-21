@@ -190,7 +190,7 @@ export default function HomePage() {
       plugins={[autoplay.current]}
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={() => autoplay.current.play()}
-      classNames={carouselUI}
+      classNames={carouselUI} 
     >
       {slides}
     </Carousel>

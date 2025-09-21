@@ -1,40 +1,32 @@
 "use client"
 import { useRef } from 'react';
 import { Carousel } from '@mantine/carousel';
-import { Paper, Title} from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { useMediaQuery, useDisclosure } from '@mantine/hooks';
 import carouselUI from './CardsCarousel.module.css';
 import '@mantine/carousel/styles.css';
 import Autoplay from 'embla-carousel-autoplay';
 import {
+  Paper, 
+  Title,
   AspectRatio,
   useMantineColorScheme,
-  Anchor,
   Box,
   Burger,
   Button,
-  Center,
-  Collapse,
   Divider,
   Drawer,
   Group,
-  HoverCard,
   ScrollArea,
-  SimpleGrid,
   Text,
-  ThemeIcon,
-  UnstyledButton,
   useMantineTheme,
+  Container, 
+  Overlay, 
+  ActionIcon 
 } from '@mantine/core';
 
 import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-import { ActionIcon } from '@mantine/core';
 import footerUI from './FooterSocial.module.css';
-import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantinex/mantine-logo';
 import HeaderUI from './HeaderMegaMenu.module.css';
-import { background } from 'storybook/internal/theming';
-import { Container, Overlay } from '@mantine/core';
 import HeroUI from './HeroContentLeft.module.css';
 interface CardProps {
   image: string;
@@ -72,13 +64,11 @@ function Card({ image, title, category }: CardProps) {
 
 export default function HomePage() {
 
-  const { setColorScheme } = useMantineColorScheme();
   const { toggleColorScheme } = useMantineColorScheme();
   const autoplay = useRef(Autoplay({ delay: 5000 }));
 
 
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-    const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
     const theme = useMantineTheme();
 
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
@@ -164,8 +154,7 @@ export default function HomePage() {
           </Text>
         </Container>
 
-          <div className={HeroUI.controls}>
-        </div>
+          <div className={HeroUI.controls}/>
       </div>
     </div>
 
@@ -176,11 +165,11 @@ export default function HomePage() {
     </div>
 
     <AspectRatio ratio={10 / 6} m="150" visibleFrom='sm'>
-      <iframe src="https://www.youtube.com/embed/Lli99OmkPwM?si=mBOhSPaDqicNS6eq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Lli99OmkPwM?si=mBOhSPaDqicNS6eq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen/>
     </AspectRatio>
 
     <AspectRatio ratio={10 / 6} hiddenFrom='sm'>
-      <iframe src="https://www.youtube.com/embed/Lli99OmkPwM?si=mBOhSPaDqicNS6eq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Lli99OmkPwM?si=mBOhSPaDqicNS6eq" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen/>
     </AspectRatio>
 
     <Carousel
@@ -197,7 +186,7 @@ export default function HomePage() {
 
     <div className={footerUI.footer}>
       <Container className={footerUI.inner}>
-        <div></div>
+        <div/>
         <Group gap={0} className={footerUI.links} justify="flex-end" wrap="nowrap">
           <ActionIcon size="lg" color="blue" >
             <IconBrandTwitter size={18} stroke={1.5} />

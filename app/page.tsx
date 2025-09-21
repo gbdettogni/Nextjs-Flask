@@ -5,9 +5,9 @@ import { Paper, Title} from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import carouselUI from './CardsCarousel.module.css';
 import '@mantine/carousel/styles.css';
-import { AspectRatio } from '@mantine/core';
 import Autoplay from 'embla-carousel-autoplay';
 import {
+  AspectRatio,
   useMantineColorScheme,
   Anchor,
   Box,

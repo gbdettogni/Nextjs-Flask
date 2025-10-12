@@ -31,17 +31,6 @@ interface CardProps {
 
 const localizer = momentLocalizer(moment)
 
-const MyCalendar = () => (
-  <div>
-    <Calendar
-      localizer={localizer}
-      events={myEventsList}
-      startAccessor="start"
-      endAccessor="end"
-      style={{ height: 500 }}
-    />
-  </div>
-)
 
 function Card({ image, title, category }: CardProps) {
   return (

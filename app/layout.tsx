@@ -1,7 +1,12 @@
 import '@mantine/core/styles.css';
-
+import '@mantine/dates/styles.css';
 import React from 'react';
-import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
+
+import { 
+  ColorSchemeScript, 
+  mantineHtmlProps, 
+  MantineProvider,
+} from '@mantine/core';
 import { theme } from '../theme';
 
 export const metadata = {
@@ -9,7 +14,12 @@ export const metadata = {
   description: 'I am using Mantine with Next.js!',
 };
 
+import { HeaderAICAS } from '@/components/Header/Header';
+import { FooterAICAS } from '@/components/Footer/Footer';
+
 export default function RootLayout({ children }: { children: any }) {
+    
+  
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
@@ -21,7 +31,12 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        
+        <MantineProvider theme={theme}>
+          <HeaderAICAS />
+          {children}
+          <FooterAICAS />
+        </MantineProvider>
       </body>
     </html>
   );

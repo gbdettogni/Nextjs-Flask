@@ -1,5 +1,5 @@
 .back {
-    background-image: url('/main_wallpaper.svg');
+    background-image: url('../public/main_wallpaper.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     bottom: 0;

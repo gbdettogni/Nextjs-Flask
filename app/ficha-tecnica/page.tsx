@@ -1,6 +1,5 @@
 import { 
     Box,
-    Text,
     Title,
 
  } from '@mantine/core';
@@ -17,7 +16,7 @@ export default function HomePage() {
                 Ficha técnica
         </Title>
         Acesse a ficha técnica completa da AICAS no link abaixo:
-        <br></br>
+        <br/>
         <Link href="#">Ficha técnica</Link>
     </Box>
     </div>

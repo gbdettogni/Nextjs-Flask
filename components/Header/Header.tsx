@@ -2,12 +2,9 @@
 import 
 { 
   useDisclosure,
-  useMediaQuery,
 }from '@mantine/hooks';
 
 import {useState, useEffect} from 'react';
-
-import {IconChevronDown} from '@tabler/icons-react';
 
 import {
   Box,    
@@ -21,22 +18,19 @@ import {
   useMantineColorScheme,
   HoverCard,
   Center,
-  NavLink,
   SimpleGrid,
   UnstyledButton,
   useMantineTheme,
-  Text,
   ActionIcon
 } from '@mantine/core';
 
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube, IconChevronDown } from '@tabler/icons-react';
 
 
 import Link from 'next/link';
 
 import HeaderUI from './HeaderMantine.module.css';
 import {Logo} from '@/components/Logo/Logo'
-import { jsx } from 'storybook/internal/theming';
 
 const AICASlinks = [
   {

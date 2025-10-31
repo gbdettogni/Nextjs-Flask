@@ -6,8 +6,8 @@ import carouselUI from './CardsCarousel.module.css';
 import '@mantine/carousel/styles.css';
 import Autoplay from 'embla-carousel-autoplay';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import { Calendar, momentLocalizer } from 'react-big-calendar'
-import moment from 'moment'
+// import { Calendar, momentLocalizer } from 'react-big-calendar'
+// import moment from 'moment'
 import {
   Paper, 
   Title,
@@ -29,7 +29,7 @@ interface CardProps {
   category: string;
 }
 
-const localizer = momentLocalizer(moment)
+// const localizer = momentLocalizer(moment)
 
 
 function Card({ image, title, category }: CardProps) {

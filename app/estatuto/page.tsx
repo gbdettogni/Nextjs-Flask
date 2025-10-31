@@ -1,6 +1,5 @@
 import { 
     Box,
-    Text,
     Title,
 
  } from '@mantine/core';
@@ -17,7 +16,7 @@ export default function HomePage() {
                 Estatuto
         </Title>
         Acesse o estatuto completo da AICAS no link abaixo:
-        <br></br>
+        <br/>
         <Link href="#">Estatuto</Link>
     </Box>
     </div>

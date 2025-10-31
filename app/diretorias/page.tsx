@@ -14,7 +14,7 @@ export default function HomePage() {
         <Title w="full" order={3} pt="30px" mb={50} c="light-dark(  rgba(197, 123, 55), rgba(219, 138, 53))">
                 Diretorias
         </Title>
-        <Box bg="light-dark(  rgba(197, 123, 55), rgba(219, 138, 53))" w="80%" ml="10%" mb={50} h={300}></Box>
+        <Box bg="light-dark(  rgba(197, 123, 55), rgba(219, 138, 53))" w="80%" ml="10%" mb={50} h={300}/>
         <Title w="full" order={3} pt="30px" mb={50} c="light-dark(  rgba(197, 123, 55), rgba(219, 138, 53))" ta="left" ml="5%">
                 Diretoria 1
         </Title>

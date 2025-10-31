@@ -90,7 +90,7 @@ export default function HomePage() {
       </div>
     </div>
 
-    <Calendar></Calendar>
+    {/* <Calendar></Calendar> */}
 
     <div style={{textAlign: 'center', marginTop: 40}}>
     <Title w="full" order={3} size="h1">
@@ -99,7 +99,7 @@ export default function HomePage() {
     </div>
 
     <div style={{textAlign: 'center', marginTop: 40}}>
-      <Text w="80%" size="lg" ml="10%" align="justify">
+      <Text w="80%" size="lg" ml="10%" ta="justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         efficitur, quam in facilisis commodo, sapien justo cursus urna, ut
         blandit turpis nulla vel quam. Nunc nec neque at dolor venenatis

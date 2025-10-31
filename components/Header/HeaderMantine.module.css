@@ -16,8 +16,16 @@
   transform: translateY(-100%);
 }
 
+.supraheader {
+  height: 50px;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  background-color: light-dark(rgb(240, 240, 240), black);
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+}
+
 .header {
-  height: 100px;
+  /* height: 100px; */
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   background-color: light-dark(rgb(240, 240, 240), black);
